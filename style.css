@@ -237,13 +237,13 @@ header .botones-header .avatar img {
 .main {
     grid-area: contenido;
     background-color: #171717;
-    padding: 30px;
+    padding: 20px;
 }
 
 .main .main-titulos {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     gap: 30px;
     
 }
