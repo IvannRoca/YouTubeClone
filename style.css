@@ -243,7 +243,7 @@ header .botones-header .avatar img {
 .main .main-titulos {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     gap: 30px;
     
 }
