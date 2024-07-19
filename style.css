@@ -244,7 +244,7 @@ header .botones-header .avatar img {
     display: flex;
     flex-direction: row;
     margin-bottom: 25px;
-    gap: 30px;
+    gap: 25px;
     
 }
 
