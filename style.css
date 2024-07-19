@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    transition: all .3s ease;                     
+}
+
+.container.active {
+    grid-template-columns: 350px auto;
+}
+
+/*---------Header----------*/
+
+.header {
+    grid-area: header;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto ;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
+    background-color: #0f0f0f;
+
+}
+
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;
+  
+}
+
+.header .contenedor-logo .boton-menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.header .contenedor-logo .boton-menu:hover {
+    background-color: #2e2e2e;
+}
+
+.header .barra-busqueda {
+    grid-area: busqueda;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    
+
+}
+
+.header .barra-busqueda input {
+    min-width: 40%;
+    padding: 0 16px;
+    height: 45px;
+    line-height: 35px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 2px solid #2a2a2a ;
+    font-size: 18px;
+    background-color: #121212;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+}
+
+.header .barra-busqueda button {
+    height: 45px;
+    border: 1px solid #272727 ;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #f8f8f8;
+    background-color: #222222;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+
+.header .barra-busqueda .boton-mic {
+    border-radius: 100%;
+    height: 43px;
+    width: 45px;
+    border: none;
+    margin-left: 17px;
+    padding: 0px;
+    cursor: pointer;
+
+}
+
+header .barra-busqueda .boton-mic:hover {
+    background: #2e2e2e;
+
+}
+
+.header .botones-header {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    
+}
+
+.header .botones-header button {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 12px;
+    border-radius: 100px;
+    color: #828282;
+    margin-right: 25px;
+    cursor: pointer;
+    
+}
+
+.header .botones-header button:hover {
+    background: #2e2e2e;
+}
+
+.header .botones-header .avatar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+}
+
+header .botones-header .avatar img {
+    vertical-align: top;
+    width: 40px;
+    border-radius: 100px;
+}
+
+/*---------Menu Lateral----------*/
+
+.menu-lateral {
+    grid-area: menu;
+    background-color: #101010;
+    overflow: hidden; 
+    
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 20px 35px;
+    color: #d9d3d3;
+    min-width: 800px;
+}
+
+.menu-lateral a:hover {
+    background: #2e2e2e;
+    border-radius: 10px;
+    
+}
+
+
+.menu-lateral .fa-solid {
+    color: #b6b2b2;
+    margin: 2px;
+    width: 25px;
+    text-align: center;
+    font-size: 25px;
+    padding-right: 50px;
+ }
+
+.menu-lateral a.active .fa-solid {
+    color: white;
+
+}
+
+ .menu-lateral .fa-regular {
+    color: #b6b2b2;
+    margin: 2px;
+    width: 25px;
+    text-align: center;
+    font-size: 25px;
+    padding-right: 50px;
+ }
+
+ .menu-lateral h2 {
+    color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+ 
+ }
+
+.menu-lateral a.active {
+    background: #2e2e2e;
+    font-weight: bold;
+    border-radius: 15px;
+    
+}
+
+.menu-lateral hr {
+    margin: 10px;
+    
+}
+
+/* ---- ---- ---- Contenido Principal ---- ---- ----*/
+
+.main {
+    grid-area: contenido;
+    background-color: #171717;
+    padding: 30px;
+}
+
+.main .main-titulos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    gap: 30px;
+    
+}
+
+.main .active {
+    font-size: 20px;
+    color: #0e0e0e; 
+    background-color: #f8f8f8;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.main .titulos {
+    font-size: 20px;
+    color: white;
+    background-color: #2e2e2e;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+.main .titulos:hover {
+    background: #5f5e5e;
+
+}
+
+.main .grid-videos {
+    display: grid;
+    grid-gap: 40px 30px;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.main .grid-videos .video {
+    width: 100%;
+    display: block;
+}
+
+.main .grid-videos .video img{
+    width: 100%;
+}
+
+/* ---- ---- ---- Mediaqueris---- ---- ----*/
+
+@media screen and (max-width: 1200px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .main .grid-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header .barra-busqueda input {
+        min-width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: auto;
+    }
+    .header {
+        padding: 20px;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        grid-template-areas: "logo iconos"
+                             "busqueda busqueda";
+    }
+}
