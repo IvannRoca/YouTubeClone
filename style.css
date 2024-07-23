@@ -237,32 +237,33 @@ header .botones-header .avatar img {
 .main {
     grid-area: contenido;
     background-color: #171717;
-    padding: 20px;
+    padding: 15px;
 }
 
 .main .main-titulos {
     display: flex;
     flex-direction: row;
     margin-bottom: 25px;
-    gap: 25px;
+    gap: 20px;
+    align-items: center;
     
 }
 
 .main .active {
-    font-size: 20px;
+    font-size: 15px;
     color: #0e0e0e; 
     background-color: #f8f8f8;
-    padding: 8px;
+    padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     
 }
 
 .main .titulos {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     background-color: #2e2e2e;
-    padding: 8px;
+    padding: 5px;
     border-radius: 10px;
     
 }
