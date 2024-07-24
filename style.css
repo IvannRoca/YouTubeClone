@@ -289,6 +289,46 @@ header .botones-header .avatar img {
     width: 100%;
 }
 
+/* ---------Info de videos------------ */
+
+.main .grid-videos img {
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.main .grid-videos a {
+    display: flex;
+    margin-top: 10px;
+    font-size: 1em;
+   
+}
+
+.main .grid-videos .channel {
+    display: flex;
+    font-size: 15px;
+    color:#aaaaaa;
+    margin-left: 45px;
+    margin-top: -8px;
+    
+
+}
+
+.main .grid-videos .channel:hover {
+    color:#f1f1f1;
+    
+}
+
+
+.main .grid-videos p {
+    display: flex;
+    font-size: 15px;
+    color:#aaaaaa ;
+    margin-left: 45px;
+}
+
+
 /* ---- ---- ---- Mediaqueris---- ---- ----*/
 
 @media screen and (max-width: 2450px) {
